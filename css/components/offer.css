@@ -1,0 +1,36 @@
+.offer_session{
+    background-color: var(--color3) ;
+}
+
+.offer_container{
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+}
+
+.offer_container img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+
+.offer_container_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.offer_container_text h1{
+    font-family: var(--DM-SERIF-DISPLAY);
+    font-weight: bold;
+    font-size: 90px;
+}
+
+.offer_container_text p{
+    font-family: var(--DM-SERIF-DISPLAY);
+    font-size: 20px;
+    font-weight: 40;
+}

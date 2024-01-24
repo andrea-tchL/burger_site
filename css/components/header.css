@@ -1,0 +1,50 @@
+.header__nav{
+    display: flex;
+    overflow: hidden;
+    gap: 100px;
+
+    height: 70px;
+}
+
+.header__logo__ordinateur{
+    flex: 1;
+    display:flex;
+    position:relative;
+    align-items: center;
+}
+
+.header__logo__overlay{
+    background-color: var(--primary-color);
+    width: 80%;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    
+}
+
+.header__logo__ordinateur h1 {
+    z-index: 2;
+    color: var(--text-color);
+    padding-left: 30px;
+    position: relative;
+}
+
+.header__menu{
+    display:flex;
+    list-style-type: none;
+    gap: 40px;
+    flex:1.2;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu li{
+    font-size: larger;
+    font-weight: bold;
+    color: var(--text-color2);
+    cursor: pointer;
+}
+
+
+
+

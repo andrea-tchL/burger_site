@@ -1,0 +1,117 @@
+.dishes{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    gap: 50px;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.popular__food{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.popular__food__button {
+    width: 160px;
+    height: 60px;
+    border-radius: 40px 40px 40px 40px ;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--plus-jakarta-sans);
+    color: white;
+    gap: 3px;
+
+}
+
+.popular__food__button img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.popular__food__button.active{
+    background-color: white;
+    color: black;
+}   
+
+.popular__food__button:hover{
+    background-color: white;
+    color: black;
+}   
+
+.popular__food__catalogue{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    justify-content: center;
+    
+}
+
+.popular__food__button__catalogue{
+    width: fit-content;
+    padding: 10px;
+    height: 50px;
+    background: linear-gradient(to right, #c34921, #e5b890);
+    color:white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    margin: 30px auto 40px;
+    cursor: pointer;
+}
+.popular__food__button__catalogue img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.popular__food__catalogue img{
+    width: 230px;
+    height: 220px;
+}
+
+.article__card{
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    align-items: center;
+}
+
+
+.article__card.active_card{
+    background-color: white;
+    color: black;
+
+}
+
+.colore{
+    color:white;
+}

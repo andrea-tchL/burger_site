@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+/* other css file imports */
+@import url("components/header.css");
+@import url("components/hero.css");
+@import url("components/about.css");
+@import url("components/popular.css");
+@import url("components/question.css");
+@import url("components/offer.css");
+@import url("components/footer.css");
+
+/* CSS variables for reusablity across all files (including above imported) */
+:root {
+--playfair-display: "Playfair Display", serif;
+--plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+--DM-SERIF-DISPLAY: 'DM Serif Display', serif;
+
+--primary-color: #A75D5D;
+--primary-color-darker: #8a4b4b;
+--secondary-color: #121212;
+--third-color: #F0997D;
+--another-color: #D3756B;
+--burger-color: #F3D7CA;
+--burger-color2: #D3756B;
+--color3: #a75353;
+
+--text-color: #F8EAD8;
+--text-color2: #000000;
+
+--color-white: #fff;
+--color-creamson: #FFC3A1;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+body {
+max-width: 1280px;
+margin: 0 auto;
+background-color: var(--color-creamson);
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+a:hover{
+    color:white
+}
+
+
+/* START: about us media queries */
+
+@media screen and (max-width: 750px) {
+.about-us__image {
+flex-direction: column;
+}
+
+.about-us__image-sushi3 {
+border-bottom: 8px solid var(--color-creamson);
+border-right: none;
+}
+
+.about-us__button {
+display: block;
+top: 47%;
+}
+}
+
+@media screen and (max-width: 550px) {
+    .about_us_image > img:nth-child(1){
+        height: 20vh;
+    
+    }
+    .about_us_image > img:nth-child(3){
+        height: 20vh;
+    }
+    .about_us_text{
+        gap: 60px;
+        opacity:70%;
+    }
+    
+    .about_us_text h1{
+        font-size: 20px;
+    }
+    
+    .about_us_text p{
+        font-size: 15px;
+    }
+
+}
+/* END: about us media queries */
+
+
+/* START: header media querie */
+@media screen and (max-width: 550px) {
+.header__logo__ordinateur {
+padding-left: 0;
+font-size: 10px;
+}
+
+.header__logo__overlay{
+    width: 100%;
+    }
+
+.header__menu{
+    gap: 10px;
+    flex:1;
+    font-size: 10px;
+}
+
+.header__nav{
+    gap: 20px;
+    height: 70px;
+}
+}
+/* END: header media queries */
+
+/* START: hero media queries */
+@media screen and (max-width: 550px) {
+    .hero-image img{
+        width: 300px;
+        margin-top: 200px;
+        margin-left: 10px;
+    }
+
+    .hero-overlay{
+        width: 100%;
+    }
+
+    .hero-text-contain h1{
+        font-size: 40px;
+    }
+    
+    .hero-text-contain p{
+        font-size: 10px;
+    }
+
+    .hero-button-contain button{
+        width: 100px;
+        height: 30px;
+        border-radius: 40px 40px 40px 40px ;
+        margin-top: 300px;
+    }
+
+    .hero-avis-contains p{
+        font-size: 10px;
+        width: 60vw;
+    
+    }
+    .hero-avis-contains div{
+        font-size: 2px;
+    }
+
+    .hero-text-contain{
+
+        margin-top: 40px;
+        width: 90vw;
+    }
+
+}
+/* END: hero media queries */
+
+/* START: offer media queries */
+@media screen and (max-width: 550px) {
+    .offer_container{
+        flex-wrap: wrap;
+    }
+
+    .FAQ_button{
+        width: 300px;
+    }
+    
+}
+/* END: popular media queries */
+
+

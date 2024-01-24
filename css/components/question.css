@@ -1,0 +1,59 @@
+.FAQ_session{
+    background-color: var(--burger-color);
+    height: fit-content;
+    overflow: hidden;
+}
+
+.FAQ_container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.FAQ_container h1 {
+    text-decoration: underline overline black;
+}
+
+.FAQ_button{
+    background-color: var(--burger-color2);
+    color: white;
+    border: none;
+    width: 600px;
+    height: 60px;
+    border-radius: 20px;
+    font-family: var(--DM-SERIF-DISPLAY);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.button_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    object-fit: contain;
+}
+
+.FAQ_container p{
+    font-family: var(--DM-SERIF-DISPLAY);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.FAQ_button_contact{
+    background-color: black;
+    color: white;
+    font-family:var(--DM-SERIF-DISPLAY);
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    width:100px;
+    cursor: pointer;
+}
